@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./:/usr/share/nginx/html:ro
+      - ./:/usr/share/nginx/Beranda.html:ro
 
   uptime-kuma:
     image: louislam/uptime-kuma:1
