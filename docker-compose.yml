@@ -1,0 +1,21 @@
+services:
+  web-portofolio:
+    image: nginx:alpine
+    container_name: web-tabs-gitar
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime_kuma
+    restart: always
+    volumes:
+      - uptime-kuma-data:/app/data
+    ports:
+      - "3001:3001"
+
+volumes:
+  uptime-kuma-data:
