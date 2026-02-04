@@ -1,5 +1,5 @@
 services:
-  web-portofolio:
+  web-tabs-gitar:
     image: nginx:alpine
     container_name: web-tabs-gitar
     restart: always
